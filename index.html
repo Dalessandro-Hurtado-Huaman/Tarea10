@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de grid</title>
+</head>
+<style>
+    #contenedor{
+        border: 1px solid black;
+        padding: 2%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "uno dos dos tres"
+                             "uno cinco siete cuatro"
+                             "uno  ocho  seis cuatro";
+        height: 60vh;
+    }
+    .uno{
+        grid-area: uno; background-color: green;
+    }
+    .dos{
+        grid-area: dos; background-color: brown;
+    }
+    .tres{
+        grid-area: tres;background-color: green;
+    }
+    .cuatro{
+        grid-area: cuatro;background-color: brown;
+    }
+    .cinco{
+        grid-area: cinco; background-color: blueviolet;
+    }
+    .seis{
+        grid-area: seis; background-color: cadetblue;
+    }
+    .siete{
+        grid-area: siete; background-color: lightgreen;
+    }
+    .ocho{
+        grid-area: ocho; background-color: chocolate;
+    }
+    .caja{
+        width: 100%;
+        height: 100%;
+        border:  1px solid black ;
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+
+
+
+
+
+
+  </style>
+<body>
+    <h1>Grid 1</h1>
+    <div id="contenedor">
+        <div class="caja uno">uno</div>
+        <div class="caja dos">dos</div>
+        <div class="caja tres">tres</div>
+        <div class="caja cuatro">cuatro</div>
+        <div class="caja cinco">cinco</div>
+        <div class="caja seis">seis</div>
+        <div class="caja siete">siete</div>
+        <div class="caja ocho">ocho</div>
+
+
+    </div>
+    
+</body>
+</html>
